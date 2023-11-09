@@ -1,0 +1,21 @@
+.loader-wrapper {
+  bottom: 40%;
+  position: absolute;
+  display: none;
+}
+
+.custom-loader {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 4px solid;
+  border-color: rgb(161, 160, 160);
+  border-right-color: #ffffff;
+  animation: s2 1s infinite ease-in-out;
+}
+
+@keyframes s2 {
+  to {
+    transform: rotate(1turn);
+  }
+}

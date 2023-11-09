@@ -1,0 +1,25 @@
+{
+  "videos": [
+    {
+      "videoSrc": "assets/videos/from-a-different-angle1.mp4",
+      "videoCC": "assets/subtitles/en1.vtt",
+      "videoTitle": {
+        "en": "From a different angle | Episode 01 | Western media between Ukraine and Gaza.. when lying becomes second nature!"
+      }
+    },
+    {
+      "videoSrc": "assets/videos/from-a-different-angle2.mp4",
+      "videoCC": "assets/subtitles/en2.vtt",
+      "videoTitle": {
+        "en": "From a different angle | Episode 02 | Nationalism and the Palestinian cause"
+      }
+    },
+    {
+      "videoSrc": "assets/videos/Is_it_possible_that_all_these_prayers_are_not_answered.mp4",
+      "videoCC": "assets/subtitles/en3.vtt",
+      "videoTitle": {
+        "en": "Is it possible that all these prayers for Gaza are not answered?"
+      }
+    }
+  ]
+}
