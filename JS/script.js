@@ -1,4 +1,5 @@
 /////Global variables
+//////Don't try using it, it's protected :)
 const APIKey = "AIzaSyBzuxsMhK3p2f_rsBo2Bck3C9mVmQmUtHM";
 const currentVideoId = window.location.search.slice(4, 15);
 const currentVideoNum = window.location.search.slice(15);
@@ -175,6 +176,14 @@ updateVideoInfo = async () => {
         : JSONData[currentVideoNum - 1].Title
     }`;
     El.style.direction = `${currLangIsAR ? `rtl` : `ltr`}`;
+  });
+
+  /////Align description content according to device's language
+  const descriptionContentWrapper = document.querySelectorAll(".main-info");
+  descriptionContentWrapper.forEach((content) => {
+    content.style.justifyContent = `${
+      currLangIsAR ? `flex-end` : `flex-start`
+    }`;
   });
 
   /////Video release date

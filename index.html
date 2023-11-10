@@ -4,13 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FreeTube</title>
-    <meta name="description" content="Youtube video player page clone" />
-    <!-- <meta http-equiv="refresh" content="0; url=http://example.com"> -->
+    <meta
+      name="description"
+      content="A YouTube video player clone with nearly all main functionalities and cross-device responsiveness designed to closely resemble YouTube's interface with vanilla JS with no libraries whatsoever."
+    />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spinner.css" />
     <script src="JS/video-player.js" defer></script>
     <script src="JS/script.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/5.1.0/screenfull.min.js"></script>
   </head>
   <body>
     <!-- Page header -->
@@ -670,7 +671,7 @@
                 </button>
               </div>
             </div>
-            <video playsinline autoplay preload="none">
+            <video playsinline autoplay preload="metadata">
               <track
                 kind="subtitles"
                 srclang="en"
@@ -685,7 +686,7 @@
             <!-- Channel info wrapper -->
             <div class="channel-info-wrapper">
               <div class="channel-info">
-                <img class="pp" draggable="false" alt="Channel icon" />
+                <img class="pp" draggable="false" />
                 <!-- Channel name/subs wrapper -->
                 <div class="channel-namesubs">
                   <div class="channel-name"></div>
@@ -718,7 +719,7 @@
           <!-- Channel info wrapper -->
           <div class="channel-info-wrapper">
             <div class="channel-info">
-              <img class="pp" draggable="false" alt="Channel icon" />
+              <img class="pp" draggable="false" />
               <!-- Channel name/subs -->
               <div class="channel-namesubs">
                 <div class="channel-name"></div>
