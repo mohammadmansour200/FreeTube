@@ -14,16 +14,21 @@ A YouTube video player clone with nearly all main functionalities and cross-devi
 
 ✅ User-friendly interface closely resembling YouTube's design
 
-✅ Partially multi-lingual
+✅ Partially multi-lingual (English and Arabic)
 
 
 ## 📚 How it's done
 
-With a mixture of Youtube data API to fetch the Arabic title, thumbnail, video id, video owner channel id, picture and title, video views count and publish date; a video's JSON file to fetch the video source which is stored locally in the assets/videos file, the video subtitles source which is stored locally too, the video title in English.
+With a mixture of Youtube data API to fetch the Arabic title, thumbnail, video id, video owner channel id, picture and title, video views count and publish date; a videos JSON file to fetch the video source which is stored locally in the assets/videos file, the video subtitles source which is stored locally too and the video title in English.
+
 According to the current location in the webpage the correct video info and data is shown and according to the device's language either Arabic or English is shown.
 
 
 ## 🚀 Planned improvements
+- Adding local storage to persist things like playback speed
+- The ability of adjusting the background color, text color, font etc. of the captions.
+- Light/dark mode
+- Ability of changing the language manually
 
 I want it to be a more bigger project, I want it to be a fully-functional Youtube-like platform that respects the Shariah-law, I see tremendous potential in that and what I made according to me is a promising start.
 
