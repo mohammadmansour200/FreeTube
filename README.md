@@ -9,8 +9,11 @@ A YouTube video player clone with nearly all main functionalities and cross-devi
 ## ⚙️ Features
 
 ✅ A working playlist that allows you to play videos included in the list seamlessly 
+
 ✅ Fully responsive video player with nearly all main functionalities like captions, playback speed, double tap to seek/rewind, fullscreen mode (doesn't work on iPhone unfortunately), mini-player mode, theater mode etc.
+
 ✅ User-friendly interface closely resembling YouTube's design
+
 ✅ Partially multi-lingual
 
 
