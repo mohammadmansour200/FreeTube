@@ -5,6 +5,13 @@ const currentVideoId = window.location.search.slice(4, 15);
 const currentVideoNum = window.location.search.slice(15);
 const currLangIsAR = navigator.language.slice(0, 2) == "ar";
 
+updateUrl = () => {
+  if (window.location.search == "") {
+    window.location.href = "/index.html?id=c2RwvfakBno1";
+  }
+};
+updateUrl();
+
 /////Fetching JSON data
 fetchJSONData = async () => {
   document.querySelector(".loader-wrapper").style.display = "block";
