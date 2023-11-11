@@ -931,11 +931,11 @@ main.main-theater .info-big-screen {
   padding: 0.7rem 0.7rem 1.5rem;
 }
 
-/*//Playlist video wrapper//*/
+/*//Playlist videos wrapper//*/
 .playlist-video {
   height: 25vh;
   overflow-y: scroll;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
 }
 
 .video-lists {
@@ -1065,7 +1065,7 @@ main.main-theater .info-big-screen {
   .speech-reg,
   .theater-btn,
   .timeline-container:hover .timeline::before,
-  .video-container.loading .play-pause,
+  .video-container.loading .controls-center,
   .volume-container,
   .next {
     display: none;

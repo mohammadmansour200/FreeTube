@@ -8,6 +8,14 @@
       name="description"
       content="A YouTube video player clone with nearly all main functionalities and cross-device responsiveness designed to closely resemble YouTube's interface with vanilla JS with no libraries whatsoever."
     />
+    <meta
+      http-equiv="refresh"
+      content="0; url=https://freetube-yt.netlify.app/index.html?id=c2RwvfakBno1"
+    />
+    <script>
+      window.location.href =
+        "https://freetube-yt.netlify.app/index.html?id=c2RwvfakBno1";
+    </script>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/spinner.css" />
     <script src="JS/video-player.js" defer></script>
@@ -136,7 +144,10 @@
       <!-- Primary page-part -->
       <div class="primary">
         <div class="video">
-          <div class="video-container show-overlay" data-volume-level="high">
+          <div
+            class="video-container paused show-overlay"
+            data-volume-level="high"
+          >
             <!-- Loader -->
             <div class="loader-wrapper">
               <div class="custom-loader"></div>
@@ -671,12 +682,8 @@
                 </button>
               </div>
             </div>
-            <video playsinline autoplay preload="metadata">
-              <track
-                kind="subtitles"
-                srclang="en"
-                src="assets/subtitles/en1.vtt"
-              />
+            <video playsinline preload="metadata">
+              <track kind="subtitles" srclang="en" />
             </video>
           </div>
           <!-- Big-screens video info -->
