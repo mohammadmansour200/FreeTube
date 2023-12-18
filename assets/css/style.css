@@ -184,7 +184,7 @@ input {
 /*//Page primary-part//*/
 .primary {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1110px;
 }
 
 /*//Video buttons hover/active//*/
@@ -504,7 +504,7 @@ video {
   z-index: 100;
 }
 
-@media (min-width: 630px) {
+@media (min-width: 821px) {
   .video-container.paused .video-controls-container,
   .video-container:focus-within .video-controls-container,
   .video-container:hover .video-controls-container {
@@ -616,22 +616,8 @@ video {
   cursor: pointer;
 }
 
-/*/
-/Mobile on show overlay thumb styling//*/
-.video-container.show-overlay
-  .progress-bar[type="range"]::-webkit-slider-thumb {
-  width: 12px;
-  height: 12px;
-  transform: translateY(-5px);
-}
-.video-container.show-overlay .progress-bar[type="range"]::-moz-range-thumb {
-  width: 12px;
-  height: 12px;
-  transform: translateY(0);
-}
-
 /*//On hover thumb stlying//*/
-@media (min-width: 630px) {
+@media (min-width: 821px) {
   .progress-bar[type="range"]:hover::-webkit-slider-thumb {
     height: 17px;
     width: 17px;
@@ -648,11 +634,12 @@ video {
   display: flex;
   align-items: center;
   gap: 1.1rem;
+  margin: 10px;
 }
 
 .video-controls-container .controls button {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
   cursor: pointer;
   transition: opacity 150ms ease-in-out;
 }
@@ -681,8 +668,8 @@ video {
 .volume-low-icon,
 .volume-muted-icon {
   display: none;
-  height: 30px;
-  width: 30px;
+  height: 27px;
+  width: 27px;
 }
 
 .video-container[data-volume-level="high"] .volume-high-icon,
@@ -710,11 +697,11 @@ video {
 .volume-slider[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  margin-top: -5.5px;
+  margin-top: -4px;
   background-color: var(--btn-color);
   border-radius: 0.5rem;
-  height: 1rem;
-  width: 1rem;
+  height: 0.8rem;
+  width: 0.8rem;
 }
 
 /*//Firefox styles//*/
@@ -727,8 +714,8 @@ video {
   background-color: var(--btn-color);
   border: none;
   border-radius: 0.5rem;
-  height: 1rem;
-  width: 1rem;
+  height: 0.8rem;
+  width: 0.8rem;
 }
 
 /*//Video duration container//*/
@@ -757,7 +744,7 @@ video {
 .video-container.captions #cc-line,
 .video-container.captions .controls-start #cc-line {
   height: 10px;
-  margin-top: 5px;
+  margin-top: 3px;
   animation: 180ms ease-out stroke;
 }
 
@@ -933,8 +920,8 @@ main.main-theater .info-big-screen {
 
 /*//Playlist videos wrapper//*/
 .playlist-video {
-  height: 25vh;
-  overflow-y: scroll;
+  height: 22vh;
+  overflow-y: auto;
   border-radius: 0 0 10px 10px;
 }
 
@@ -962,6 +949,7 @@ main.main-theater .info-big-screen {
 }
 
 .video-title {
+  text-overflow: ellipsis;
   overflow: hidden;
   font-size: 1rem;
 }
@@ -1020,8 +1008,8 @@ main.main-theater .info-big-screen {
     width: 95%;
   }
 }
-@media (max-width: 630px),
-  (max-width: 950px) and (orientation: landscape) and (pointer: coarse) {
+@media (max-width: 821px),
+  (max-width: 1025px) and (orientation: landscape) and (pointer: coarse) {
   .rewind {
     margin-right: 30px;
     margin-left: -10px;
@@ -1070,13 +1058,24 @@ main.main-theater .info-big-screen {
   .next {
     display: none;
   }
+  .video-container.show-overlay
+    .progress-bar[type="range"]::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+    transform: translateY(-5px);
+  }
+  .video-container.show-overlay .progress-bar[type="range"]::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    transform: translateY(0);
+  }
   .video-container.show-overlay .controls-center,
   .video-container.show-overlay .controls-start,
   .video-container.show-overlay .duration-container,
   .video-container.show-overlay .full-screen-btn {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
-    z-index: 1000;
+    pointer-events: all;
   }
   .controls-center,
   .controls-start,
@@ -1084,11 +1083,12 @@ main.main-theater .info-big-screen {
   .full-screen-btn,
   .video-container:not(.show-overlay).full-screen .timeline-container {
     opacity: 0;
-    z-index: -1;
+    transition: opacity 0.2s ease-in-out;
+    pointer-events: none;
   }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 821px) {
   .wrapper {
     justify-content: space-between;
   }
@@ -1151,7 +1151,7 @@ main.main-theater .info-big-screen {
     margin-top: 80%;
   }
 }
-@media (max-width: 950px) and (orientation: landscape) and (pointer: coarse) {
+@media (max-width: 1025px) and (orientation: landscape) and (pointer: coarse) {
   .header {
     display: none;
   }

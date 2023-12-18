@@ -489,26 +489,20 @@ const playPauseMobile = document.querySelector(".play-pause");
 
 playPauseBtn.addEventListener("click", () => playPause());
 playPauseMobile.addEventListener("click", playPauseFuncMobile);
-video.addEventListener("click", () => {
-  playPause();
-});
 
 function playPause() {
-  var isMobileBrowser = /Mobi/.test(navigator.userAgent);
   const pauseFeedback = document.querySelector(".pause-feedback");
   const playFeedback = document.querySelector(".play-feedback");
-  if (!isMobileBrowser) {
-    if (vidWrapper.classList.contains("paused")) {
-      video.play();
-      vidWrapper.classList.remove("paused");
-      playFeedback.classList.add("animate-feedback");
-      pauseFeedback.classList.remove("animate-feedback");
-    } else {
-      video.pause();
-      vidWrapper.classList.add("paused");
-      playFeedback.classList.remove("animate-feedback");
-      pauseFeedback.classList.add("animate-feedback");
-    }
+  if (vidWrapper.classList.contains("paused")) {
+    video.play();
+    vidWrapper.classList.remove("paused");
+    playFeedback.classList.add("animate-feedback");
+    pauseFeedback.classList.remove("animate-feedback");
+  } else {
+    video.pause();
+    vidWrapper.classList.add("paused");
+    playFeedback.classList.remove("animate-feedback");
+    pauseFeedback.classList.add("animate-feedback");
   }
 }
 
