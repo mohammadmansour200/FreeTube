@@ -49,4 +49,4 @@ If you'd like to contribute code to the project, please follow these steps:
 4. Push your changes to your forked repository
 5. Open a pull request to merge your changes into the main repository.
 
-Feel free to explore the demo and contribute to this project if you have any suggestions or would like to improve the YouTube video player clone!
+Feel free to explore the demo and contribute to this project if you have any suggestions or would like to improve it.
