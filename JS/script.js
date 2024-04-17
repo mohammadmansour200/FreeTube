@@ -85,9 +85,9 @@ playlist = async () => {
         <div class="video-title" style="${
           currLangIsAR ? `direction:rtl` : `direction:ltr`
         }">${
-      currLangIsAR
-        ? video.videoTitleAR.slice(0, 4)
-        : playlistDataFromJSON[video.videoNumber - 1]
+      !currLangIsAR
+        ? video.videoTitleAR.slice(0, 50) + "..."
+        : playlistDataFromJSON[video.videoNumber - 1].slice(0, 50) + "..."
     }</div>
         <div class="video-channel">${video.channelTitle}</div>
       </div>

@@ -3,10 +3,10 @@
   animation: spinner-bulqg1 0.96s infinite linear alternate,
     spinner-oaa3wk 1.92s infinite linear;
   position: absolute;
-  display: none;
-  top: 40%;
-  width: 100px;
-  height: 100px;
+  display: block;
+  top: 35%;
+  width: 60px;
+  height: 60px;
   border: 5px solid #ffffff;
 }
 
